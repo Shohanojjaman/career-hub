@@ -5,3 +5,13 @@
 @layer base {
     @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 }
+
+@layer components {
+    .theme-text {
+        @apply bg-gradient-to-l from-[#7E90FE] via-purple-500 to-[#9873FF] bg-clip-text text-transparent;
+    }
+
+    .theme-bg {
+        @apply bg-gradient-to-l from-[#7E90FE] via-purple-500 to-[#9873FF]
+    }
+}
