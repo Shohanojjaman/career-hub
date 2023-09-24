@@ -8,10 +8,14 @@
 
 @layer components {
     .theme-text {
-        @apply bg-gradient-to-l from-[#7E90FE] via-purple-500 to-[#9873FF] bg-clip-text text-transparent;
+        @apply bg-gradient-to-l from-[#7E90FE] to-[#9873FF] bg-clip-text text-transparent;
     }
 
     .theme-bg {
-        @apply bg-gradient-to-l from-[#7E90FE] via-purple-500 to-[#9873FF]
+        @apply bg-gradient-to-l from-[#7E90FE] to-[#9873FF]
+    }
+
+    .light-theme-bg{
+        @apply bg-gradient-to-l from-[#7e90fe0d] to-[#9873ff0d]
     }
 }
