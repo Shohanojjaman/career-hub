@@ -20,6 +20,6 @@
     }
 
     .banner-bg {
-        background: url(../src/assets/images/bg1.png) bottom left no-repeat, url(../src/assets/images/bg2.png) top right no-repeat;
+        background: url(../assets/images/bg1.png) bottom left no-repeat, url(../assets/images/bg2.png) top right no-repeat, #9873ff0d;
     }
 }

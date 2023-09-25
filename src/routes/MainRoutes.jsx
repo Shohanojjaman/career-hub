@@ -17,7 +17,7 @@ const MainRoutes = createBrowserRouter([
       {
         path: '/appliedJobs',
         element: <AppliedJobs></AppliedJobs>,
-        loader: () => fetch('../data/jobs.json'),
+        loader: () => fetch('./data/jobs.json'),
       },
       {
         path: '/blog',
@@ -26,7 +26,7 @@ const MainRoutes = createBrowserRouter([
       {
         path: '/job/:id',
         element: <JobDetails></JobDetails>,
-        loader: () => fetch('../data/jobs.json'),
+        loader: () => fetch('./data/jobs.json'),
       },
     ],
   },

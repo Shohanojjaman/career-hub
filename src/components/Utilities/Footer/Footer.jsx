@@ -23,7 +23,7 @@ const Footer = () => {
               <FaTwitter className="text-[#00cbfb] bg-white w-8 text-lg h-8 p-2 rounded-full"></FaTwitter>
             </Link>
             <Link>
-              <img src="../src/assets/icons/instagram.png" className="w-8 h-8" alt="Icon of instagram" />
+              <img src="./assets/icons/instagram.png" className="w-8 h-8" alt="Icon of instagram" />
             </Link>
           </div>
         </aside>

@@ -17,7 +17,7 @@ const Banner = () => {
           <button className="btn theme-bg text-white mt-8">Get Started</button>
         </div>
         <div className="lg:w-1/2 flex items-end">
-          <img className="w-full self-end" src="./src/assets/images/user.png" alt="" />
+          <img className="w-full self-end" src="./assets/images/user.png" alt="" />
         </div>
       </div>
     </div>

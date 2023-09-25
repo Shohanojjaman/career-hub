@@ -39,11 +39,11 @@ const AppliedJobs = () => {
                 </div>
                 <div className="flex max-xl:flex-col gap-6">
                   <div className="flex gap-2 items-center">
-                    <img className="self-center" src="./src/assets/icons/Location.png" alt="Location" />
+                    <img className="self-center" src="./assets/icons/Location.png" alt="Location" />
                     <p className="text-xl font-semibold text-body">{job?.location}</p>
                   </div>
                   <div className="flex gap-2 items-center">
-                    <img className="self-center" src="./src/assets/icons/money.png" alt="Location" />
+                    <img className="self-center" src="./assets/icons/money.png" alt="Location" />
                     <p className="text-xl font-semibold text-body">Salary: {job?.salary}</p>
                   </div>
                 </div>

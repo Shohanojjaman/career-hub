@@ -64,14 +64,14 @@ const JobDetails = () => {
             <hr className="theme-bg h-[2px] opacity-30" />
             <div className="space-y-4">
               <div className="flex gap-2">
-                <img className="self-center" src="../src/assets/icons/money.png" alt="Icon of money" />
+                <img className="self-center" src="../assets/icons/money.png" alt="Icon of money" />
                 <p className="text-xl font-medium text-body">
                   <span className="font-semibold text-[#474747]">Salary : </span>
                   {salary} (Per Month)
                 </p>
               </div>
               <div className="flex gap-2">
-                <img className="self-center" src="../src/assets/icons/calendar.png" alt="Icon of calendar" />
+                <img className="self-center" src="../assets/icons/calendar.png" alt="Icon of calendar" />
                 <p className="text-xl font-medium text-body">
                   <span className="font-semibold text-[#474747]">Job Title : </span>
                   {job_title}
@@ -82,21 +82,21 @@ const JobDetails = () => {
             <hr className="theme-bg h-[2px] opacity-30" />
             <div className="space-y-4">
               <div className="flex gap-2">
-                <img className="self-center" src="../src/assets/icons/phone.png" alt="Icon of phone" />
+                <img className="self-center" src="../assets/icons/phone.png" alt="Icon of phone" />
                 <p className="text-xl font-medium text-body">
                   <span className="font-semibold text-[#474747]">Phone : </span>
                   {phone}
                 </p>
               </div>
               <div className="flex gap-2">
-                <img className="self-center" src="../src/assets/icons/email.png" alt="Icon of email" />
+                <img className="self-center" src="../assets/icons/email.png" alt="Icon of email" />
                 <p className="text-xl font-medium text-body">
                   <span className="font-semibold text-[#474747]">Email : </span>
                   {email}
                 </p>
               </div>
               <div className="flex gap-2">
-                <img className="self-center" src="../src/assets/icons/Location.png" alt="Icon of location" />
+                <img className="self-center" src="../assets/icons/Location.png" alt="Icon of location" />
                 <p className="text-xl font-medium text-body">
                   <span className="font-semibold text-[#474747]">Address : </span>
                   {address}
