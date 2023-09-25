@@ -15,7 +15,7 @@ const JobCard = ({ job }) => {
           </span>
           <span className="border border-[#7E90FE] py-2 px-5 theme-text font-extrabold rounded-lg">{job_type}</span>
         </div>
-        <div className="flex gap-6">
+        <div className="flex max-xl:flex-col gap-6">
           <div className="flex gap-2 items-center">
             <img className="self-center" src="./src/assets/icons/Location.png" alt="Location" />
             <p className="text-xl font-semibold text-body">{location}</p>
