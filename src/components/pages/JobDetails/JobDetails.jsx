@@ -4,6 +4,7 @@ import PageBanner from '../../Utilities/PageBanner';
 // React Toast
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { saveJobApplication } from '../../Utilities/localStorage';
 
 const JobDetails = () => {
   const jobs = useLoaderData();
@@ -22,6 +23,7 @@ const JobDetails = () => {
   const { phone, email, address } = contact_information;
 
   const handleApply = () => {
+    saveJobApplication(Number(id));
     toast.success('Successfully Applied', {
       position: 'top-right',
       autoClose: 2000,

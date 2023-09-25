@@ -17,6 +17,7 @@ const MainRoutes = createBrowserRouter([
       {
         path: '/appliedJobs',
         element: <AppliedJobs></AppliedJobs>,
+        loader: () => fetch('../data/jobs.json'),
       },
       {
         path: '/blog',
