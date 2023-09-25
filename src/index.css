@@ -15,7 +15,11 @@
         @apply bg-gradient-to-l from-[#7E90FE] to-[#9873FF]
     }
 
-    .light-theme-bg{
+    .light-theme-bg {
         @apply bg-gradient-to-l from-[#7e90fe0d] to-[#9873ff0d]
+    }
+
+    .banner-bg {
+        background: url(../src/assets/images/bg1.png) bottom left no-repeat, url(../src/assets/images/bg2.png) top right no-repeat;
     }
 }
