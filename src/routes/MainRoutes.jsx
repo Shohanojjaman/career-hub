@@ -1,8 +1,9 @@
 import { createBrowserRouter } from 'react-router-dom';
 import Layout from '../components/layout/Layout';
 import AppliedJobs from '../components/pages/AppliedJobs/AppliedJobs';
-import Statistics from '../components/pages/Statistics/Statistics';
 import Blog from '../components/pages/Blog/Blog';
+import JobDetails from '../components/pages/JobDetails/JobDetails';
+import Statistics from '../components/pages/Statistics/Statistics';
 
 const MainRoutes = createBrowserRouter([
   {
@@ -18,9 +19,14 @@ const MainRoutes = createBrowserRouter([
         element: <AppliedJobs></AppliedJobs>,
       },
       {
-        path    :'/blog',
-        element:<Blog></Blog>
-      }
+        path: '/blog',
+        element: <Blog></Blog>,
+      },
+      {
+        path: '/job/:id',
+        element: <JobDetails></JobDetails>,
+        loader: () => fetch('../data/jobs.json'),
+      },
     ],
   },
 ]);
