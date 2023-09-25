@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const ComingSoon = ({ page }) => {
   return (
-    <div className="w-full md:w-[75%] flex justify-center items-center min-h-screen">
+    <div className="w-full flex justify-center items-center min-h-screen bg-neutral-100 rounded-xl">
       <h4 className="text-2xl lg:text-4xl font-semibold">{page} Coming Soon....</h4>
     </div>
   );
