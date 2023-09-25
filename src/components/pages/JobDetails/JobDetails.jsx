@@ -103,7 +103,7 @@ const JobDetails = () => {
             </div>
           </div>
           <button onClick={handleApply} className="btn theme-bg text-white w-full">
-            Star Applying
+            Apply now
           </button>
         </div>
       </div>
