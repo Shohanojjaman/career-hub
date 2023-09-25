@@ -1,6 +1,10 @@
+import Header from '../../../Utilities/Header/Header';
+
 const Banner = () => {
   return (
     <div className="bg-[#F9F9FF]  ">
+      <Header></Header>
+
       <div className="container mx-auto max-sm:px-5 flex max-lg:flex-col pt-8 items-center">
         <div className="lg:w-1/2 mb-16 lg:mr-16">
           <h1 className="text-5xl xl:text-[5rem] leading-tight font-extrabold">
