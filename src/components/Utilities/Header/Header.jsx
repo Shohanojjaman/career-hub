@@ -63,7 +63,9 @@ const Header = () => {
             {links}
           </ul>
         </div>
-        <a className="text-2xl md:text-4xl text-heading font-extrabold">CareerHub</a>
+        <Link to={'/'} className="text-2xl md:text-4xl text-heading font-extrabold">
+          CareerHub
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul tabIndex={0} className="menu menu-horizontal px-1">
