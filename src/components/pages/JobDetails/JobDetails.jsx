@@ -1,6 +1,10 @@
 import { useLoaderData, useParams } from 'react-router-dom';
 import PageBanner from '../../Utilities/PageBanner';
 
+// React Toast
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const JobDetails = () => {
   const jobs = useLoaderData();
   const { id } = useParams();
@@ -16,6 +20,20 @@ const JobDetails = () => {
   } = job;
 
   const { phone, email, address } = contact_information;
+
+  const handleApply = () => {
+    toast.success('Successfully Applied', {
+      position: 'top-right',
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: false,
+      progress: undefined,
+      theme: 'light',
+    });
+  };
+
   return (
     <div>
       <PageBanner title="Job Details"></PageBanner>
@@ -38,7 +56,7 @@ const JobDetails = () => {
             <p className="text-body font-medium leading-loose">{experiences}</p>
           </div>
         </div>
-        <div className="lg:col-span-1 ">
+        <div className="lg:col-span-1 space-y-6">
           <div className="bg-gradient-to-l from-[rgba(126,144,254,0.10)] to-[rgba(152,115,255,0.10)] rounded-lg p-7 space-y-6">
             <h4 className="text-heading font-extrabold text-xl">Job Details</h4>
             <hr className="theme-bg h-[2px] opacity-30" />
@@ -84,8 +102,23 @@ const JobDetails = () => {
               </div>
             </div>
           </div>
+          <button onClick={handleApply} className="btn theme-bg text-white w-full">
+            Star Applying
+          </button>
         </div>
       </div>
+      <ToastContainer
+        position="top-right"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable={false}
+        pauseOnHover
+        theme="light"
+      />
     </div>
   );
 };
