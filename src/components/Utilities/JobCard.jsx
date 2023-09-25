@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const JobCard = ({ job }) => {
-  const { logo, job_title, company_name, remote_or_onsite, location, job_type, salary } = job;
+  const { id, logo, job_title, company_name, remote_or_onsite, location, job_type, salary } = job;
   return (
     <div className="border border-[#E8E8E8] rounded-lg p-10">
       <img src={logo} alt={`Image of ${company_name}`} />
@@ -25,7 +25,9 @@ const JobCard = ({ job }) => {
             <p className="text-xl font-semibold text-body">Salary: {salary}</p>
           </div>
         </div>
-        <Link className="btn theme-bg text-white">View Details</Link>
+        <Link to={`/job/${id}`} className="btn theme-bg text-white">
+          View Details
+        </Link>
       </div>
     </div>
   );
